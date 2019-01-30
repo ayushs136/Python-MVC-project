@@ -3,7 +3,7 @@ from Models import RegisterModel, LoginModel
 
 web.config.debug = False
 urls = (
-    '/', 'Home',
+    '/', 'index',
     '/register', 'Register',
     '/login', 'Login',
     '/logout', 'Logout',
@@ -21,9 +21,9 @@ render = web.template.render("Views/Templates", base="MainLayout",
 
 # Classes/Routes
 
-class Home:
+class index:
     def GET(self):
-        return render.Home()
+        return render.index()
 
 
 class Register:
