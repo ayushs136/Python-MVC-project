@@ -1,0 +1,27 @@
+
+<div class="container">
+    $if session['user'] == None:
+        <h1>Hello Angel</h1>
+    $else:
+    <meta class="row" background="#255963">
+
+        <ul class="sidebar">
+           <span><li class="active"><a href="#"><span class="fa fa-home"> </span>Home Feeds</a></li>
+            <li ><a href="#"><span class="fa fa-account-circle"> </span> Profile</a></li>
+            <li ><a href="#"><span class="fa fa-email"> </span> Messages</a></li>
+            <li ><a href="#"><span class="fa fa-bell"> </span> Notifications</a></li>
+            <li class="seperator"></li>
+            <li ><a href="#"><span class="fa fa-settings"> </span> Settings</a></li>
+               <li ><a href="#"><span class="fa fa-help-circle"> </span> Help</a></li></span>
+        </ul>
+        <div class="col-md-6">
+            <div class="post-box">
+                <form id="post-activity">
+                    <textarea name="content" class="post-input box-shadowed-nav" placeholder="What's new, $session['user']"></textarea>
+                    <button id="post-button" class="btn btn-info btn-raised waves-effect" type="submit"><span class="fa fa-send"></span> Post</button>
+                </form>
+            </div>
+        </div>
+    </meta>
+        <!--<h1>Hello $session['user']</h1>-->
+</div>

@@ -1,0 +1,163 @@
+@import "css/bootstrap-material-design.css";
+@import "css/bootstrap.css";
+@import "css/ripples.css";
+@import "css/bootstrap-grid.css";
+@import url('https://fonts.googleapis.com/css?family=Wendy+One');
+
+#ui{
+    word-spacing: 3px;
+}
+
+#site-head {
+    font-family: 'Wendy One', sans-serif;
+    color: #000;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 10px #3b3b3b;
+    font-size: 80px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+
+}
+#site-head::after{
+    content: "";
+    left: 0px;
+    display: block;
+    width: 10px;
+    height: 95px;
+    background: #000;
+    position: absolute;
+    right: 0px;
+}
+
+
+
+body {
+    /*background: rgb(22, 22, 22);*/
+    background-color: #9cc1ff;
+
+    color: #ffd54f;
+    text-shadow: 3px 3px 10px #3b3b3b;
+}
+
+p {
+   text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    max-width: 50%;
+    max-height: 50%;
+    color: rgb(89, 89, 89);
+}
+a:hover{
+    font-size: 20px;
+    text-decoration-color: #00e676;
+
+}
+footer {
+    background-color: #000;
+    margin-top: 50vm;
+    margin-bottom: 0px;
+    padding: 10px;
+    color: #fff;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#something {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 10%;
+}
+
+#a {
+
+    background: rgb(0, 22, 148);
+    padding: 50px;
+    text-align: center;
+}
+
+#bor {
+
+
+    border-bottom: 8px solid #000;
+}
+
+.images{
+    height: 250px;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    text-align: center;
+    box-shadow: 2px 2px 10px #0f0f0f;
+}
+.images:active{
+    opacity: .4;
+}
+
+
+
+article {
+    width: auto;
+    max-width: 300px;
+    display: inline-block;
+    border: 2px solid #000f;
+    padding: 10px;
+    margin: 10px;
+    text-decoration-color: #102010;
+    border-radius: 10px;
+    transition: box-shadow 500ms, background 2s;
+    size: portrait;
+}
+article:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+    background: #222222;
+}
+
+button {
+    margin: auto;
+    border: #0b51c5;
+    shape-rendering: auto;
+}
+
+#big-text {
+    text-align: center;
+    text-emphasis: fuchsia;
+    color: #222222;
+}
+#big-text:hover{
+
+    text-align: center;
+    text-emphasis: fuchsia;
+    color: #f0f;
+    font-size: 45px;
+}
+
+#nav {
+    text-align: center;
+
+}
+
+.myInput{
+
+    margin: 10px;
+    padding: 10px;
+    width: 10%;
+    border-radius: 10px;
+}
+.myInput:focus{
+    background: #92e8bf;
+    color: #7e008b;
+    outline: none;
+    border: 1px solid #000;
+}
+.my-text{
+    max-height: 20vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 82%;
+    border: 2px solid #000;
+    padding: 10px;
+    padding-left: 20%;
+    border-radius: 10px;
+
+
+}
